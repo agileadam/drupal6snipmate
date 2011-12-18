@@ -1,0 +1,53 @@
+snippet check_plain
+	check_plain(${1:$text});
+
+snippet db_fetch_object
+	db_fetch_object(${1:$result});
+
+snippet db_query
+	$result = db_query(${1:$query}, ${2:comma-separated modifier replacements});
+
+snippet db_result
+	db_result(${1:$result});
+
+snippet dpm
+	dpm(${1:$input}, '${2:$name = NULL}');
+
+snippet drupal_goto
+	drupal_goto('${1:$path = ''}', ${2:$query = NULL}, ${3:$fragment = NULL}, ${4:$http_response_code = 302|301|303|304|305|307});
+
+snippet drupal_get_messages
+	drupal_get_messages('${1:$type = NULL|'status'|'warning'|'error'}', ${2:$clear_queue = TRUE|FALSE});
+
+snippet drupal_get_path_alias
+	drupal_get_path_alias(${1:$path}, ${2:$path_language = ''});
+
+snippet drupal_render
+	drupal_render(${1:&$elements});
+
+snippet drupal_set_message
+	drupal_set_message(${1:$message = NULL}, ${2:$type = 'status'|'warning'|'error'}, ${3:$repeat = TRUE|FALSE});
+
+snippet form_set_error
+	form_set_error(${1:$name = NULL}, ${2:$message = ''}, ${3:$reset = FALSE});
+
+snippet l
+	l(${1:$text}, ${2:$path}, ${3:$options = array()})
+
+snippet t
+	t('${1:text}', array(${2:}))
+
+snippet url
+	url('${1:path}', array(${2:}))
+
+snippet variable_del
+	variable_del('${1:`Filename()`}_${2:variable_name}');
+
+snippet variable_get
+	variable_get('${1:`Filename()`}_${2:variable_name}', '${3:default_value}');
+
+snippet variable_set
+	variable_set('${1:`Filename()`}_${2:variable_name}', '${3:default_value}');
+
+snippet watchdog
+	watchdog('${1:`Filename()`}', '${2:message}', array(${3:variables}), WATCHDOG_${4:NOTICE|ALERT|CRITICAL|ERROR|WARNING|INFO|DEBUG}, ${5:link?NULL|string});
